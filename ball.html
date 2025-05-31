@@ -5,6 +5,7 @@
     <style>
       #pro_ball_container {
         width: 100%;
+        height: 100vh;
         padding: 0;
         overflow: hidden;
         background-color: black;
@@ -127,18 +128,18 @@
           scrollTrigger: {
             trigger: ".pro_ball",
             start: "top 50%",
-            end: "top 0%",
+            end: "+=500",
             scrub: true,
           },
         })
         .to(".pro_ball", {
           y: 0,
-          duration: 1.5,
+          duration: 5,
           ease: "power2.out",
         })
         .to(".pro_ball", {
           y: "+=1",
-          duration: 1.5,
+          duration: 5,
           ease: "power2.out",
         })
         .to(".pro_ball", {
@@ -146,6 +147,12 @@
           duration: 1.5,
           ease: "power2.out",
         })
+        // .to(".pro_ball_content_heading", {
+        //   y: 180,
+        //   duration: 1.5,
+        //   ease: "none",
+        //   zIndex: 222,
+        // })
         .to(".pro_ball", {
           scale: 10,
           duration: 1.5,

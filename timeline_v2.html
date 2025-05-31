@@ -45,6 +45,32 @@
   background-size: 100% 100%;
   background-repeat: no-repeat;
 }
+.indicatorText{
+  position: absolute;
+  color: #fff;
+  font-size: 28px;
+  white-space: nowrap;
+}
+.indicatortext1{
+    top: 125px;
+    left: -50px;
+    transform: translateX(-100%);
+}
+.indicatortext2{
+    top: 270px;
+    right: -50px;
+    transform: translateX(100%);
+}
+.indicatortext3{
+    top: 420px;
+    left: -50px;
+    transform: translateX(-100%);
+}
+.indicatortext4{
+    top: 570px;
+    right: -50px;
+    transform: translateX(100%);
+}
 #pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator {
   position: absolute;
   left: 50%;
@@ -61,57 +87,20 @@
   justify-content: center;
   cursor: pointer;
 }
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(1) {
-  top: 125px;
+#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(5) {
+  top: 125px ;
 }
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(1)::before {
-  content: "Project Planning ";
-  position: absolute;
-  color: #fff;
-  top: 50%;
-  right: 0%;
-  transform: translate(-35%, -50%);
-  font-size: 20px;
-  white-space: nowrap;
+
+#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(6) {
+  top: 270px ;
 }
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(2) {
-  top: 270px;
-}
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(2)::after {
-  content: "Gap analysis ";
-  position: absolute;
-  color: #fff;
-  top: 50%;
-  left: 0%;
-  transform: translate(40%, -50%);
-  font-size: 20px;
-  white-space: nowrap;
-}
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(3) {
+
+#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(7) {
   top: 420px;
 }
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(3)::before {
-  content: "Translation mapping ";
-  position: absolute;
-  color: #fff;
-  top: 50%;
-  right: 0%;
-  transform: translate(-30%, -50%);
-  font-size: 20px;
-  white-space: nowrap
-}
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(4) {
+
+#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(8) {
   top: 570px;
-}
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(4)::after {
-  content: "Full-cycle testing ";
-  position: absolute;
-  color: #fff;
-  top: 50%;
-  left: 0%;
-  transform: translate(30%, -50%);
-  font-size: 20px;
-  white-space: nowrap
 }
 #pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_content {
   background-color: black;
@@ -144,7 +133,7 @@
 
 
 
-@media (max-width: 768px) {
+ @media (max-width: 768px) {
   #what_do_i_do {
     width: 100% !important;
     height: calc(100vh + 30px);
@@ -196,57 +185,44 @@
     justify-content: center;
     cursor: pointer;
   }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(1) {
+  .indicatorText{
+  position: absolute;
+  color: #a6a6a6;
+  font-size: 18px;
+  white-space: nowrap;
+}
+.indicatortext1{
+    top: 70px;
+    left: 28px;
+    transform: translateX(-100%) rotate(90deg);
+}
+.indicatortext2{
+    top: 136px;
+    right: 14px;
+    transform: translateX(100%) rotate(90deg);
+}
+.indicatortext3{
+    top: 136px;
+    left: 43px;
+    transform: translateX(-100%) rotate(90deg);
+}
+.indicatortext4{
+    top: 245px;
+    right: 29px;
+    transform: translateX(100%) rotate(90deg);
+}
+  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(5) {
     top: 65px !important;
   }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(1)::before {
-    content: "Discover";
-    position: absolute;
-    color: #fff;
-    top: -60% !important;
-    right: 50% !important;
-    transform: translate(50%, -50%) !important;
-    font-size: 12px !important;
-    white-space: nowrap;
-  }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(2) {
+ 
+  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(6) {
     top: 120px !important;
   }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(2)::after {
-    content: "Design";
-    position: absolute;
-    color: #fff;
-    top: 100% !important;
-    left: 50% !important;
-    transform: translate(-50%, 50%) !important;
-    font-size: 12px !important;
-    white-space: nowrap;
-  }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(3) {
+  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(7) {
     top: 180px !important;
   }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(3)::before {
-    content: "Develop";
-    position: absolute;
-    color: #fff;
-    top: -60% !important;
-    right: 50% !important;
-    transform: translate(50%, -50%) !important;
-    font-size: 12px !important;
-    white-space: nowrap;
-  }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(4) {
+  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(8) {
     top: 240px !important;
-  }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(4)::after {
-    content: "Direct";
-    position: absolute;
-    color: #fff;
-    top: 100% !important;
-    left: 50% !important;
-    transform: translate(-50%, 50%) !important;
-    font-size: 12px !important;
-    white-space: nowrap;
   }
   #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(4) span {
     display: inline-block;
@@ -275,7 +251,7 @@
   }
   
 
-}
+} 
     </style>
   </head>
   <body>
@@ -288,6 +264,10 @@
           <div class="what_do_i_do_wrapper">
             <div class="progress_container">
               <div class="line">
+                <span class="indicatorText indicatortext1">Project Planning </span>
+                <span class="indicatorText indicatortext2">Gap analysis</span>
+                <span class="indicatorText indicatortext3">Translation mapping</span>
+                <span class="indicatorText indicatortext4">Full-cycle testing</span>
                 <div class="pro_indicator"></div>
                 <div class="pro_indicator"></div>
                 <div class="pro_indicator"></div>
@@ -330,6 +310,7 @@ const what_do_i_do_heading = document.getElementById("what_do_i_do_heading");
 const what_do_i_do_pragraph = document.getElementById("what_do_i_do_pragraph");
 const pro_indicator = document.querySelectorAll(".pro_indicator");
 const line = document.querySelector(".line");
+const indicatorTexts = document.querySelectorAll(".indicatorText");
 
 function resetIndicator(item) {
   gsap.to(item, {
@@ -363,11 +344,11 @@ ScrollTrigger.create({
   // markers: true,
   onUpdate: (self) => {
     const p = self.progress;
+    
 
     if (p < 0.1) {
       
     } else if (p < 0.25) {
-    //   updateIndicator(0, '\u201CProject Planning\u201D',imgUrl1 , "200%" , paragraph1);
      updateIndicator(0, '“Project Planning”',imgUrl1 , "200%" , paragraph1);
     } else if (p < 0.5) {
       updateIndicator(1, '“Gap Analysis”', imgUrl2, "400%",paragraph2);
@@ -378,7 +359,7 @@ ScrollTrigger.create({
     } else {
       gsap.to(line, {
         backgroundSize:"100% 1000%",
-        duration: 0.3,
+        duration: 0.9,
       });
     }
   },
@@ -419,6 +400,20 @@ function updateIndicator(index, label, imgSrc, bgSizeY, pragraph) {
       el.innerHTML = "";
     }
   });
+//    change the text color 
+indicatorTexts.forEach((text, i) => {
+    if (i === index) {
+      gsap.to(text, {
+        color: "#fff",
+        duration: 0.3,
+      });
+    } else {
+      gsap.to(text, {
+        color: "#a6a6a6",
+        duration: 0.3,
+      });
+    }
+  });
 
   // Smooth image transition
   gsap.to(what_do_i_do_image, {
@@ -453,7 +448,5 @@ function updateIndicator(index, label, imgSrc, bgSizeY, pragraph) {
 }
 
     </script>
-
-    <!-- <script src="./asset/js/script2.js"></script> -->
   </body>
 </html>

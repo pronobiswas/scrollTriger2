@@ -1,0 +1,175 @@
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+    #pro_ball_container{
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  .pro_ball{
+    width: 15px;
+    height: 15px;
+    background-color: white;
+    border-radius: 50%;
+    margin: 0 auto;
+    mix-blend-mode: difference;
+    z-index: 3;
+  }
+  .pro_ball_content_wraper{
+    width: 100%;
+    padding: 270px 0 0px 0;
+  }
+  .pro_ball_content_heading{
+    text-align: center;
+    font-size: 6vw;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 70px;
+  }
+  .pro_ball_pragrapg_wraper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .pro_half{
+    width: 50%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .pro_paragraph{
+    background-color: transparent;
+    width: 100%;
+    max-width: 600px;
+    padding: 0 28px;
+    font-size: 28px;
+    color: black;
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: left;
+  }
+  @media (max-width:576px){
+      .pro_ball_content_wraper{
+        width: 100%;
+        padding: 105px 0 100px 0;
+      }
+    .pro_ball_content_heading{
+        text-align: center;
+        font-size: 15vw;
+        color: #fff;
+        font-weight: 700;
+        margin-bottom: 70px;
+    }
+      .pro_half{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+  .first_half{
+      display: none;
+  }
+      .pro_paragraph{
+        background-color: transparent;
+        width: 100%;
+        max-width: 500px;
+        padding: 0 28px;
+        font-size: 22px;
+        color: black;
+        font-weight: 500;
+        line-height: 1.5;
+        text-align: left;
+      }
+  }
+  
+    </style>
+  </head>
+  <body>
+    
+    <div class="banner" style="width: 100%; height: 800px;"></div>
+    <div id="pro_ball_container">
+      <div class="pro_ball"></div>
+      <div class="pro_ball_content_wraper">
+        <h1 class="pro_ball_content_heading">We made it simple.</h1>
+        <div class="pro_ball_pragrapg_wraper">
+          <div class="pro_half first_half"></div>
+          <div class="pro_half">
+            <p class="pro_paragraph">
+              “With the ever-changing complexity and challenges of exchanging data, there are many possible breakpoints that can affect scorecards, compliancy and trade relationships. Focus on your core business. Yoke will handle EDI and integration” 
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer" style="width: 100%; height: 460px;"></div>
+    
+    <!-- GSAP Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <!-- ScrollTrigger Plugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+    const pro_ball_container = document.getElementById("pro_ball_container");
+      let scrollBallY = Math.floor(pro_ball_container.offsetHeight / 2);
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap
+        .timeline({
+          scrollTrigger: {
+            trigger: ".pro_ball",
+            start: "top 70%",
+            end: "top 0%",
+            scrub: true,
+          },
+        })
+        
+        .to(".pro_ball", {
+          y: 210,
+          duration: 5,
+          ease: "power2.out",
+        })
+        .to(".pro_ball", {
+          y: scrollBallY,
+          scale: 10,
+          duration: 5,
+          ease: "power2.out",
+        })
+        .to(".pro_ball", {
+          scale: 20,
+          duration: 2,
+          ease: "power2.out",
+        })
+        .to(".pro_ball", {
+          scale: 40,
+          duration: 2,
+          ease: "power2.out",
+        })
+        .to(".pro_ball", {
+          scale: 80,
+          duration: 2,
+          ease: "power2.out",
+        })
+        .to(".pro_ball", {
+          scale: 170,
+          duration: 2,
+          ease: "power2.out",
+        })
+        .to(".pro_ball", {
+          scale: 250,
+          duration: 2,
+          ease: "power2.out",
+        });
+
+
+
+    </script>
+  </body>
+</html>
