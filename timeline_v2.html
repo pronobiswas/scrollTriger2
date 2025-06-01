@@ -47,34 +47,39 @@
 }
 .indicatorText{
   position: absolute;
-  color: #fff;
+  color: #a6a6a6;
   font-size: 28px;
   white-space: nowrap;
 }
 .indicatortext1{
-    top: 125px;
+    top: 100px;
     left: -50px;
     transform: translateX(-100%);
 }
 .indicatortext2{
-    top: 270px;
+    top: 215px;
     right: -50px;
     transform: translateX(100%);
 }
 .indicatortext3{
-    top: 420px;
+    top: 325px;
     left: -50px;
     transform: translateX(-100%);
 }
 .indicatortext4{
-    top: 570px;
+    top: 445px;
     right: -50px;
     transform: translateX(100%);
+}
+.indicatortext5{
+    top: 560px;
+    left: -50px;
+    transform: translateX(-100%);
 }
 #pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 20px;
   height: 20px;
   background: gray;
@@ -87,20 +92,23 @@
   justify-content: center;
   cursor: pointer;
 }
-#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(5) {
-  top: 125px ;
-}
-
 #pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(6) {
-  top: 270px ;
+  top: 115px ;
 }
 
 #pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(7) {
-  top: 420px;
+  top: 230px; ;
 }
 
 #pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(8) {
-  top: 570px;
+  top: 345px;
+}
+
+#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(9) {
+  top: 460px;
+}
+#pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(10) {
+  top: 575px;
 }
 #pro_main_Wrapper #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_content {
   background-color: black;
@@ -172,7 +180,7 @@
   #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%) rotate(90deg) !important;
+    transform: translate(-50% , -50%) rotate(90deg) !important;
     width: 20px;
     height: 20px;
     background: #313636;
@@ -188,46 +196,56 @@
   .indicatorText{
   position: absolute;
   color: #a6a6a6;
-  font-size: 18px;
+  font-size: 13px;
   white-space: nowrap;
 }
 .indicatortext1{
-    top: 70px;
-    left: 28px;
+    top: 40px;
+    left: 77px;
     transform: translateX(-100%) rotate(90deg);
 }
 .indicatortext2{
-    top: 136px;
-    right: 14px;
+    top: 98px;
+    right: 66px;
     transform: translateX(100%) rotate(90deg);
 }
 .indicatortext3{
-    top: 136px;
-    left: 43px;
+    top: 154px;
+    left: 88px;
     transform: translateX(-100%) rotate(90deg);
 }
 .indicatortext4{
-    top: 245px;
-    right: 29px;
+    top: 211px;
+    right: 77px;
     transform: translateX(100%) rotate(90deg);
 }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(5) {
-    top: 65px !important;
+.indicatortext5{
+    top: 266px;
+    right: 0px;
+    transform: translateX(100%) rotate(90deg);
+}
+  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(6) {
+    top: 52px !important;
+    transform: translateY(50%);
   }
  
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(6) {
-    top: 120px !important;
-  }
   #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(7) {
-    top: 180px !important;
+    top: 104px !important;
   }
   #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(8) {
-    top: 240px !important;
+    top: 156px !important;
   }
-  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(4) span {
+  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(9) {
+    top: 214px !important;
+  }
+  #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(10) {
+    top: 270px !important;
+    background-color: green;
+  }
+  /* #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_container .line .pro_indicator:nth-child(4) span {
     display: inline-block;
     rotate: 0deg;
-  }
+  } */
   #what_do_i_do .pro_container .what_do_i_do_wrapper .progress_content {
     background-color: rgb(192, 65, 65);
     width: 100% !important;
@@ -268,6 +286,8 @@
                 <span class="indicatorText indicatortext2">Gap analysis</span>
                 <span class="indicatorText indicatortext3">Translation mapping</span>
                 <span class="indicatorText indicatortext4">Full-cycle testing</span>
+                <span class="indicatorText indicatortext5">Go Live</span>
+                <div class="pro_indicator"></div>
                 <div class="pro_indicator"></div>
                 <div class="pro_indicator"></div>
                 <div class="pro_indicator"></div>
@@ -329,15 +349,17 @@ const paragraph1 = "Our team collaborates with you to define scope, outline acti
 const paragraph2 = "We perform a thorough gap analysis, ensuring that EDI requirements align with your ERP/WMS systems for efficient data flow. ";
 const paragraph3 = "Our team incrementally builds and tests translation maps according to EDI specifications, ensuring smooth data transformation between systems.";
 const paragraph4 = "We coordinate with customers and partners to conduct full-cycle testing, ensuring all systems function as expected in real world scenarios .";
+const paragraph5 = '“Our team facilitates the go-live process by coordinating with partners, ensuring a seamless transition from testing to production” ';
 const imgUrl1 = "https://kenrickr67.nightwingers.com/wp-content/uploads/2025/04/62ea3870abd300c868b1d3ef_pexels-fauxels-3183197-min-p-1080.png";
 const imgUrl2 = "https://kenrickr67.nightwingers.com/wp-content/uploads/2025/04/62ea3870abd300b72bb1d3eb_your-pic-min-p-1080.png";
 const imgUrl3 = "https://kenrickr67.nightwingers.com/wp-content/uploads/2025/04/62ea3870abd30078ebb1d3f0_pexels-fauxels-3183198-min-p-1080.png";
 const imgUrl4 = "https://kenrickr67.nightwingers.com/wp-content/uploads/2025/04/62ea3870abd3003947b1d3f2_pexels-andrew-neel-2312369-min-p-1080.png";
+const imgUrl5 = "https://offprem.tech/wp-content/uploads/2021/08/pexels-mike-1178683-2-scaled.jpg";
 
 ScrollTrigger.create({
   trigger: "#what_do_i_do",
   start: "top top",
-  end: "+=1800",
+  end: "+=3800",
   pin: true,
   pinSpacing:0,
   scrub: true,
@@ -346,16 +368,19 @@ ScrollTrigger.create({
     const p = self.progress;
     
 
-    if (p < 0.1) {
+    if (p < 0.05) {
       
-    } else if (p < 0.25) {
+    } else if (p < 0.16) {
      updateIndicator(0, '“Project Planning”',imgUrl1 , "200%" , paragraph1);
-    } else if (p < 0.5) {
-      updateIndicator(1, '“Gap Analysis”', imgUrl2, "400%",paragraph2);
-    } else if (p < 0.75) {
-      updateIndicator(2, '“Iterative Translation Mapping”',imgUrl3, "620%",paragraph3);
-    } else if (p < 0.9) {
-      updateIndicator(3, '“Full-Cycle Testing”', imgUrl1 , "800%",paragraph4);
+    } else if (p < 0.32) {
+      updateIndicator(1, '“Gap Analysis”', imgUrl2, "370%",paragraph2);
+    } else if (p < 0.48) {
+      updateIndicator(2, '“Iterative Translation Mapping”',imgUrl3, "480%",paragraph3);
+    } else if (p < 0.64) {
+      updateIndicator(3, '“Full-Cycle Testing”', imgUrl1 , "670%",paragraph4);
+    }
+     else if (p < 0.80) {
+      updateIndicator(4, '“Go Live”', imgUrl5 , "900%",paragraph5);
     } else {
       gsap.to(line, {
         backgroundSize:"100% 1000%",
